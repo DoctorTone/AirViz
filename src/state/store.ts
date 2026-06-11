@@ -1,19 +1,23 @@
 import { create } from "zustand";
-import type { ScreenSize } from "./Config";
 
-type FrameworkState = {
-  screenSize: ScreenSize;
-  setScreenSize: (size: ScreenSize) => void;
-  infoDialogOpen: boolean;
-  setShowInfoDialog: (status: boolean) => void;
+type AirVizState = {
+  currentDay: number;
+  setCurrentDay: (day: number) => void;
+  timeLength: number;
+  airData: any;
+  setAirData: (data: any) => void;
 };
 
-const useStore = create<FrameworkState>((set) => ({
-  screenSize: { width: window.innerWidth, height: window.innerHeight },
-  setScreenSize: (size) =>
-    set((state) => ({ screenSize: { ...state.screenSize, ...size } })),
-  infoDialogOpen: false,
-  setShowInfoDialog: (status) => set(() => ({ infoDialogOpen: status })),
+const useStore = create<AirVizState>((set) => ({
+  currentDay: 0,
+  timeLength: 0,
+  setCurrentDay: (day) => set(() => ({ currentDay: day })),
+  airData: null,
+  setAirData: (data) => {
+    const sensor = data.sensors[0];
+    const length = sensor.timeseries.length;
+    set(() => ({ airData: data, timeLength: length }));
+  },
 }));
 
 export default useStore;
