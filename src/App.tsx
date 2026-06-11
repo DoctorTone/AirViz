@@ -3,6 +3,7 @@ import { OrbitControls } from "@react-three/drei";
 import { INTERACTIONS } from "./state/Config";
 import Lights from "./components/Lights";
 import Scene from "./components/Scene";
+import FloorGrid from "./components/FloorGrid";
 import UI from "./UI/UI";
 
 function App() {
@@ -15,8 +16,7 @@ function App() {
         <color attach="background" args={["#1a1a2e"]} />
         <Lights />
         <Scene />
-        {/* Grid for reference */}
-        <gridHelper args={[200, 20]} />
+        <FloorGrid />
 
         <OrbitControls
           makeDefault
