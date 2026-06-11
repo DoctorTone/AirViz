@@ -1,0 +1,392 @@
+{
+  "metadata": {
+    "city": "Delhi",
+    "country": "India",
+    "data_source": "OpenAQ (AirNow)",
+    "generated": "2026-06-11T21:33:56.175332",
+    "update_frequency": "hourly",
+    "timezone": "Asia/Kolkata"
+  },
+  "sensors": [
+    {
+      "id": 8118,
+      "name": "New Delhi",
+      "latitude": 28.63576,
+      "longitude": 77.22445,
+      "elevation_m": null,
+      "parameter": "pm25",
+      "unit": "\u00b5g/m\u00b3",
+      "measurements_count": 741,
+      "days_covered": 31,
+      "timeseries": [
+        {
+          "date": "2026-05-10",
+          "pm25": 51.0,
+          "pm25_min": 41.0,
+          "pm25_max": 69.0,
+          "pm25_std": 8.1,
+          "aqi": 139,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-05-11",
+          "pm25": 62.3,
+          "pm25_min": 48.0,
+          "pm25_max": 89.0,
+          "pm25_std": 11.2,
+          "aqi": 155,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-12",
+          "pm25": 59.6,
+          "pm25_min": 43.0,
+          "pm25_max": 81.0,
+          "pm25_std": 10.6,
+          "aqi": 153,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-13",
+          "pm25": 52.2,
+          "pm25_min": 27.0,
+          "pm25_max": 96.0,
+          "pm25_std": 18.6,
+          "aqi": 142,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-05-14",
+          "pm25": 46.8,
+          "pm25_min": 24.0,
+          "pm25_max": 100.0,
+          "pm25_std": 17.4,
+          "aqi": 129,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-05-15",
+          "pm25": 56.5,
+          "pm25_min": 26.0,
+          "pm25_max": 93.0,
+          "pm25_std": 19.5,
+          "aqi": 152,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-16",
+          "pm25": 61.4,
+          "pm25_min": 27.0,
+          "pm25_max": 117.0,
+          "pm25_std": 24.1,
+          "aqi": 154,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-17",
+          "pm25": 59.7,
+          "pm25_min": 35.0,
+          "pm25_max": 118.0,
+          "pm25_std": 23.3,
+          "aqi": 153,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-18",
+          "pm25": 58.7,
+          "pm25_min": 33.0,
+          "pm25_max": 106.0,
+          "pm25_std": 20.6,
+          "aqi": 153,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-19",
+          "pm25": 52.6,
+          "pm25_min": 22.0,
+          "pm25_max": 88.0,
+          "pm25_std": 18.3,
+          "aqi": 143,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-05-20",
+          "pm25": 39.0,
+          "pm25_min": 21.0,
+          "pm25_max": 65.0,
+          "pm25_std": 10.9,
+          "aqi": 110,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-05-21",
+          "pm25": 51.7,
+          "pm25_min": 32.0,
+          "pm25_max": 85.0,
+          "pm25_std": 13.9,
+          "aqi": 141,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-05-22",
+          "pm25": 77.8,
+          "pm25_min": 41.0,
+          "pm25_max": 616.0,
+          "pm25_std": 114.9,
+          "aqi": 163,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-23",
+          "pm25": 61.8,
+          "pm25_min": 40.0,
+          "pm25_max": 111.0,
+          "pm25_std": 17.1,
+          "aqi": 154,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-24",
+          "pm25": 55.9,
+          "pm25_min": 31.0,
+          "pm25_max": 96.0,
+          "pm25_std": 16.6,
+          "aqi": 151,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-25",
+          "pm25": 90.8,
+          "pm25_min": 62.0,
+          "pm25_max": 139.0,
+          "pm25_std": 18.7,
+          "aqi": 169,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-26",
+          "pm25": 58.0,
+          "pm25_min": 24.0,
+          "pm25_max": 124.0,
+          "pm25_std": 29.6,
+          "aqi": 152,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-27",
+          "pm25": 71.3,
+          "pm25_min": 30.0,
+          "pm25_max": 169.0,
+          "pm25_std": 39.4,
+          "aqi": 159,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-28",
+          "pm25": 55.9,
+          "pm25_min": 14.0,
+          "pm25_max": 116.0,
+          "pm25_std": 28.8,
+          "aqi": 151,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-05-29",
+          "pm25": 27.3,
+          "pm25_min": 15.0,
+          "pm25_max": 43.0,
+          "pm25_std": 9.0,
+          "aqi": 83,
+          "category": "moderate",
+          "color": "#FFFF00",
+          "advice": "Acceptable; some may be sensitive"
+        },
+        {
+          "date": "2026-05-30",
+          "pm25": 27.6,
+          "pm25_min": 8.0,
+          "pm25_max": 70.0,
+          "pm25_std": 13.1,
+          "aqi": 84,
+          "category": "moderate",
+          "color": "#FFFF00",
+          "advice": "Acceptable; some may be sensitive"
+        },
+        {
+          "date": "2026-05-31",
+          "pm25": 28.2,
+          "pm25_min": 21.0,
+          "pm25_max": 37.0,
+          "pm25_std": 4.5,
+          "aqi": 85,
+          "category": "moderate",
+          "color": "#FFFF00",
+          "advice": "Acceptable; some may be sensitive"
+        },
+        {
+          "date": "2026-06-01",
+          "pm25": 35.1,
+          "pm25_min": 22.0,
+          "pm25_max": 53.0,
+          "pm25_std": 8.2,
+          "aqi": 99,
+          "category": "moderate",
+          "color": "#FFFF00",
+          "advice": "Acceptable; some may be sensitive"
+        },
+        {
+          "date": "2026-06-02",
+          "pm25": 44.5,
+          "pm25_min": 28.0,
+          "pm25_max": 71.0,
+          "pm25_std": 13.2,
+          "aqi": 123,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-06-03",
+          "pm25": 59.0,
+          "pm25_min": 35.0,
+          "pm25_max": 74.0,
+          "pm25_std": 10.9,
+          "aqi": 153,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-06-04",
+          "pm25": 45.5,
+          "pm25_min": 15.0,
+          "pm25_max": 84.0,
+          "pm25_std": 15.7,
+          "aqi": 126,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-06-05",
+          "pm25": 58.3,
+          "pm25_min": 20.0,
+          "pm25_max": 98.0,
+          "pm25_std": 24.3,
+          "aqi": 152,
+          "category": "unhealthy",
+          "color": "#FF0000",
+          "advice": "Everyone may begin to experience effects"
+        },
+        {
+          "date": "2026-06-06",
+          "pm25": 44.5,
+          "pm25_min": 22.0,
+          "pm25_max": 94.0,
+          "pm25_std": 19.4,
+          "aqi": 123,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-06-07",
+          "pm25": 37.0,
+          "pm25_min": 19.0,
+          "pm25_max": 51.0,
+          "pm25_std": 10.0,
+          "aqi": 105,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-06-08",
+          "pm25": 41.0,
+          "pm25_min": 25.0,
+          "pm25_max": 68.0,
+          "pm25_std": 8.7,
+          "aqi": 115,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        },
+        {
+          "date": "2026-06-09",
+          "pm25": 38.9,
+          "pm25_min": 19.0,
+          "pm25_max": 73.0,
+          "pm25_std": 13.4,
+          "aqi": 109,
+          "category": "unhealthy_sensitive",
+          "color": "#FF7E00",
+          "advice": "Sensitive groups should limit exposure"
+        }
+      ]
+    }
+  ],
+  "aqi_scale": {
+    "good": {
+      "range": "0-50",
+      "color": "#00E400"
+    },
+    "moderate": {
+      "range": "51-100",
+      "color": "#FFFF00"
+    },
+    "unhealthy_sensitive": {
+      "range": "101-150",
+      "color": "#FF7E00"
+    },
+    "unhealthy": {
+      "range": "151-200",
+      "color": "#FF0000"
+    },
+    "very_unhealthy": {
+      "range": "201-300",
+      "color": "#8F3F97"
+    },
+    "hazardous": {
+      "range": "301-500",
+      "color": "#7E0023"
+    }
+  }
+}
