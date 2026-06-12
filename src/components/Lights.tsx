@@ -1,8 +1,9 @@
 const Lights = () => {
   return (
     <>
-      <directionalLight intensity={1} position={[100, 100, 100]} />
-      <ambientLight intensity={0.6} />
+      <ambientLight intensity={0.7} />
+      <directionalLight position={[100, 100, 100]} intensity={1.2} castShadow />
+      <pointLight position={[0, 50, 0]} intensity={0.5} color="#ff7e00" />
     </>
   );
 };

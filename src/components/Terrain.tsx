@@ -1,10 +1,8 @@
-import React from "react";
-
 const Terrain = ({ lat, lon }) => {
   return (
-    <mesh position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+    <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
       <planeGeometry args={[2000, 2000]} />
-      <meshStandardMaterial color="#2a4a3a" />
+      <meshStandardMaterial color="#1a3a1a" roughness={0.8} metalness={0.1} />
     </mesh>
   );
 };

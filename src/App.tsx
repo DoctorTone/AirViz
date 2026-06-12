@@ -5,18 +5,19 @@ import Lights from "./components/Lights";
 import Scene from "./components/Scene";
 import FloorGrid from "./components/FloorGrid";
 import UI from "./UI/UI";
+const fogColor = "#4a5a6a";
 
 function App() {
   return (
     <>
       <Canvas
-        camera={{ position: [0, 50, 100], fov: 50, near: 10, far: 10000 }}
+        style={{ background: fogColor }}
+        camera={{ position: [0, 75, 150], fov: 50, near: 10, far: 10000 }}
         gl={{ antialias: true }}
       >
-        <color attach="background" args={["#1a1a2e"]} />
         <Lights />
         <Scene />
-        <FloorGrid />
+        {/* <FloorGrid /> */}
 
         <OrbitControls
           makeDefault
