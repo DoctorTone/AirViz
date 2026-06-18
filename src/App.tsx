@@ -12,7 +12,7 @@ function App() {
     <>
       <Canvas
         style={{ background: fogColor }}
-        camera={{ position: [0, 75, 150], fov: 50, near: 10, far: 10000 }}
+        camera={{ position: [0, 300, 1000], fov: 50, near: 10, far: 10000 }}
         gl={{ antialias: true }}
       >
         <Lights />

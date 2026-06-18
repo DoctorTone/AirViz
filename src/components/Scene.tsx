@@ -28,7 +28,7 @@ const Scene = () => {
 
   return (
     <>
-      <Terrain lat={sensor.latitude} lon={sensor.longitude} />
+      <Terrain />
       {/* <SensorPoint lat={sensor.latitude} lon={sensor.longitude} /> */}
       {/* <PollutionCloud pm25={currentReading.pm25} color={currentReading.color} /> */}
       <Buildings color={currentReading.color} />
