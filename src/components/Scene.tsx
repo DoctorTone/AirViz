@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import Terrain from "./Terrain";
-import { SensorPoint } from "./SensorPoint";
-import PollutionCloud from "./PollutionCloud";
 import BuildingGrid from "./BuildingGrid";
 import VolumetricFog from "./VolumetricFog";
 import useStore from "../state/store";
