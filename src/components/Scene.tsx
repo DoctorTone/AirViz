@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Terrain from "./Terrain";
-import BuildingGrid from "./BuildingGrid";
 import VolumetricFog from "./VolumetricFog";
 import useStore from "../state/store";
+import Buildings from "./Buildings";
 
 const Scene = () => {
   const airData = useStore((state) => state.airData);
@@ -31,7 +31,7 @@ const Scene = () => {
       <Terrain lat={sensor.latitude} lon={sensor.longitude} />
       {/* <SensorPoint lat={sensor.latitude} lon={sensor.longitude} /> */}
       {/* <PollutionCloud pm25={currentReading.pm25} color={currentReading.color} /> */}
-      <BuildingGrid pm25={currentReading.pm25} color={currentReading.color} />
+      <Buildings color={currentReading.color} />
       <VolumetricFog pm25={currentReading.pm25} />
     </>
   );

@@ -1,4 +1,5 @@
 import { useEffect, useState, useMemo } from "react";
+import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import * as THREE from "three";
 
 // Project lon/lat to local metres, centred on the bbox centre.
