@@ -7,7 +7,7 @@ const UI = () => {
   return (
     <>
       {/* <Copyright /> */}
-      {/* <Controls /> */}
+      <Controls />
       {/* <Info /> */}
       <TimeLine />
     </>

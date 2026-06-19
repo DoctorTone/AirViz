@@ -33,10 +33,10 @@ function Buildings({ color }) {
 
     // DEBUG
     // Building height spread
-    const heights = buildings.map((b) => b.height).sort((a, b) => a - b);
-    console.log("min", heights[0], "max", heights[heights.length - 1]);
-    console.log("median", heights[Math.floor(heights.length / 2)]);
-    console.log("p95", heights[Math.floor(heights.length * 0.95)]);
+    // const heights = buildings.map((b) => b.height).sort((a, b) => a - b);
+    // console.log("min", heights[0], "max", heights[heights.length - 1]);
+    // console.log("median", heights[Math.floor(heights.length / 2)]);
+    // console.log("p95", heights[Math.floor(heights.length * 0.95)]);
 
     const geometries = [];
 

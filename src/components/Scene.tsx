@@ -32,7 +32,7 @@ const Scene = () => {
       {/* <SensorPoint lat={sensor.latitude} lon={sensor.longitude} /> */}
       {/* <PollutionCloud pm25={currentReading.pm25} color={currentReading.color} /> */}
       <Buildings color={currentReading.color} />
-      {/* <VolumetricFog pm25={currentReading.pm25} /> */}
+      <VolumetricFog pm25={currentReading.pm25} />
     </>
   );
 };

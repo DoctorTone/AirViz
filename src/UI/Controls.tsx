@@ -1,7 +1,21 @@
 import { useControls } from "leva";
 
 const Controls = () => {
-  const { myValue } = useControls({ myValue: 10 });
+  useControls({
+    fogNear: {
+      value: 100,
+      min: 50,
+      max: 1000,
+      onChange: (value) => {},
+    },
+    fogFar: {
+      value: 100,
+      min: 50,
+      max: 1000,
+      onChange: (value) => {},
+    },
+  });
+
   return null;
 };
 
