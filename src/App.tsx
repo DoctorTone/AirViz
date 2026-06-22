@@ -3,9 +3,8 @@ import { OrbitControls } from "@react-three/drei";
 import { INTERACTIONS } from "./state/Config";
 import Lights from "./components/Lights";
 import Scene from "./components/Scene";
-import FloorGrid from "./components/FloorGrid";
 import UI from "./UI/UI";
-const fogColor = "#4a5a6a";
+const fogColor = "#81868b";
 
 function App() {
   return (
