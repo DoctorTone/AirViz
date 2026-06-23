@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Terrain from "./Terrain";
 import useStore from "../state/store";
 import Buildings from "./Buildings";
@@ -17,8 +17,6 @@ const Scene = () => {
   }, []);
 
   if (!airData) {
-    // DEBUG
-    console.log("No data yet...");
     return null;
   }
 
@@ -29,8 +27,6 @@ const Scene = () => {
   return (
     <>
       <Terrain />
-      {/* <SensorPoint lat={sensor.latitude} lon={sensor.longitude} /> */}
-      {/* <PollutionCloud pm25={currentReading.pm25} color={currentReading.color} /> */}
       <Buildings color={currentReading.color} pm25={currentReading.pm25} />
       <SmogLayers color={currentReading.color} pm25={currentReading.pm25} />
     </>
