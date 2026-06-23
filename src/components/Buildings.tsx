@@ -1,5 +1,6 @@
 import { useEffect, useState, useMemo } from "react";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
+import useHeightFogMaterial from "./useHeightfogMaterial";
 import * as THREE from "three";
 
 // Project lon/lat to local metres, centred on the bbox centre.
@@ -14,8 +15,9 @@ function project(lon, lat, centerLon, centerLat) {
   return [x, z];
 }
 
-function Buildings({ color }) {
+function Buildings({ color, pm25 }) {
   const [buildings, setBuildings] = useState([]);
+  const fogMaterial = useHeightFogMaterial(color, pm25, { fogTop: 40 });
 
   useEffect(() => {
     fetch("/data/delhi_buildings.json")
@@ -65,17 +67,7 @@ function Buildings({ color }) {
 
   if (!geometry) return null;
 
-  return (
-    <mesh geometry={geometry}>
-      <meshStandardMaterial
-        color={color}
-        roughness={0.6}
-        metalness={0.1}
-        emissive={color}
-        emissiveIntensity={0.2}
-      />
-    </mesh>
-  );
+  return <mesh geometry={geometry} material={fogMaterial} />;
 }
 
 export default Buildings;
