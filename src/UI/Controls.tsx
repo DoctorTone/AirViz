@@ -8,7 +8,8 @@ const Controls = () => {
     planes: {
       value: 20,
       min: 10,
-      max: 100,
+      max: 50,
+      step: 1.0,
       onChange: (value) => {
         setNumPlanes(value);
       },
