@@ -2,12 +2,11 @@ import { useMemo } from "react";
 import useStore from "../state/store";
 import * as THREE from "three";
 
-const OPACITY = 0.5;
-
 const SmogLayers = ({ pm25, color, extent = 5000, capHeight = 30 }) => {
   // Map the day's PM2.5 (~27-91) to overall haze intensity.
   const t = Math.min(1, Math.max(0, (pm25 - 27) / (91 - 27)));
   const layers = useStore((state) => state.numPlanes);
+  const opacity = useStore((state) => state.planeOpacity);
 
   const planes = useMemo(() => {
     const arr = [];
@@ -29,7 +28,7 @@ const SmogLayers = ({ pm25, color, extent = 5000, capHeight = 30 }) => {
           <meshBasicMaterial
             color={color}
             transparent
-            opacity={t * p.heightFalloff * OPACITY} // per-plane; they stack up
+            opacity={t * p.heightFalloff * opacity} // per-plane; they stack up
             depthWrite={false}
             side={THREE.DoubleSide}
             blending={THREE.NormalBlending}
