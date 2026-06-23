@@ -2,24 +2,15 @@ import { useControls } from "leva";
 import useStore from "../state/store";
 
 const Controls = () => {
-  const setFogNear = useStore((state) => state.setFogNear);
-  const setFogFar = useStore((state) => state.setFogFar);
+  const setNumPlanes = useStore((state) => state.setNumPlanes);
 
   useControls({
-    fogNear: {
-      value: 100,
-      min: 50,
-      max: 1000,
+    planes: {
+      value: 20,
+      min: 10,
+      max: 100,
       onChange: (value) => {
-        setFogNear(value);
-      },
-    },
-    fogFar: {
-      value: 100,
-      min: 50,
-      max: 3000,
-      onChange: (value) => {
-        setFogFar(value);
+        setNumPlanes(value);
       },
     },
   });
