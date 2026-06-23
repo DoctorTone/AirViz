@@ -16,7 +16,6 @@ function App() {
       >
         <Lights />
         <Scene />
-        {/* <FloorGrid /> */}
 
         <OrbitControls
           makeDefault
