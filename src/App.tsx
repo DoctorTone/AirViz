@@ -3,14 +3,17 @@ import { OrbitControls } from "@react-three/drei";
 import { INTERACTIONS } from "./state/Config";
 import Lights from "./components/Lights";
 import Scene from "./components/Scene";
+import useStore from "./state/store";
 import UI from "./UI/UI";
-const fogColor = "#81868b";
 
 function App() {
+  const skyColour = useStore((state) => state.skyColour);
+  // DEBUG
+  console.log("Sky col = ", skyColour.getHexString());
   return (
     <>
       <Canvas
-        style={{ background: fogColor }}
+        style={{ background: `#${skyColour.getHexString()}` }}
         camera={{ position: [0, 300, 1000], fov: 50, near: 10, far: 10000 }}
         gl={{ antialias: true }}
       >
