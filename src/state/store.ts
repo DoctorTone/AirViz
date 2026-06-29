@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { Color } from "three";
 
 type AirVizState = {
   currentDay: number;
@@ -10,6 +11,8 @@ type AirVizState = {
   setNumPlanes: (planes: number) => void;
   planeOpacity: number;
   setPlaneOpacity: (opacity: number) => void;
+  skyColour: Color;
+  setSkyColour: (newColour: string) => void;
 };
 
 const useStore = create<AirVizState>((set) => ({
@@ -21,6 +24,8 @@ const useStore = create<AirVizState>((set) => ({
   setPlaneOpacity: (opacity) => set(() => ({ planeOpacity: opacity })),
   setCurrentDay: (day) => set(() => ({ currentDay: day })),
   airData: null,
+  skyColour: new Color("#81868b"),
+  setSkyColour: (newColour) => set(() => ({ skyColour: new Color(newColour) })),
   setAirData: (data) => {
     const sensor = data.sensors[0];
     const length = sensor.timeseries.length;

@@ -4,6 +4,7 @@ import useStore from "../state/store";
 const Controls = () => {
   const setNumPlanes = useStore((state) => state.setNumPlanes);
   const setPlaneOpacity = useStore((state) => state.setPlaneOpacity);
+  const setSkyColour = useStore((state) => state.setSkyColour);
 
   useControls({
     planes: {
@@ -22,6 +23,12 @@ const Controls = () => {
       step: 0.1,
       onChange: (value) => {
         setPlaneOpacity(value);
+      },
+    },
+    sky: {
+      value: "#81868b",
+      onChange: (value) => {
+        setSkyColour(value);
       },
     },
   });
