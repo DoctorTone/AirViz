@@ -5,11 +5,10 @@ import Lights from "./components/Lights";
 import Scene from "./components/Scene";
 import useStore from "./state/store";
 import UI from "./UI/UI";
+import DaySky from "./components/DaySky";
 
 function App() {
   const skyColour = useStore((state) => state.skyColour);
-  // DEBUG
-  console.log("Sky col = ", skyColour.getHexString());
   return (
     <>
       <Canvas
@@ -18,6 +17,7 @@ function App() {
         gl={{ antialias: true }}
       >
         <Lights />
+        {/* <DaySky /> */}
         <Scene />
 
         <OrbitControls
