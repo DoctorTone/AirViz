@@ -26,7 +26,7 @@ const SmogLayers = ({ pm25, color, extent = 5000, capHeight = 30 }) => {
         <mesh key={i} position={[0, p.y, 0]} rotation={[-Math.PI / 2, 0, 0]}>
           <planeGeometry args={[extent, extent]} />
           <meshBasicMaterial
-            color={color}
+            color={"grey"}
             transparent
             opacity={t * p.heightFalloff * opacity} // per-plane; they stack up
             depthWrite={false}

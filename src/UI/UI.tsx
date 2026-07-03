@@ -2,13 +2,15 @@ import Copyright from "../UI/Copyright";
 import Controls from "./Controls";
 import Info from "./Info";
 import TimeLine from "./TimeLine";
+import Legend from "./Legend";
 
 const UI = () => {
   return (
     <>
       {/* <Copyright /> */}
-      <Controls />
+      {/* <Controls /> */}
       {/* <Info /> */}
+      <Legend />
       <TimeLine />
     </>
   );

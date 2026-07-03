@@ -17,7 +17,7 @@ function App() {
         gl={{ antialias: true }}
       >
         <Lights />
-        {/* <DaySky /> */}
+        <DaySky />
         <Scene />
 
         <OrbitControls
