@@ -18,7 +18,7 @@ type AirVizState = {
 const useStore = create<AirVizState>((set) => ({
   currentDay: 0,
   timeLength: 0,
-  numPlanes: 20,
+  numPlanes: 30,
   planeOpacity: 0.5,
   setNumPlanes: (planes) => set(() => ({ numPlanes: planes })),
   setPlaneOpacity: (opacity) => set(() => ({ planeOpacity: opacity })),
