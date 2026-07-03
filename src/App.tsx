@@ -26,7 +26,9 @@ function App() {
           enableRotate={INTERACTIONS.ROTATE}
           enableDamping={true}
           minPolarAngle={0}
-          maxPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI / 2.2}
+          minDistance={500}
+          maxDistance={2000}
         />
       </Canvas>
       <UI />
