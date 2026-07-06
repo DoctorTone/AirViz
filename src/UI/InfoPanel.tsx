@@ -2,7 +2,7 @@ import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 const InfoPanel = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // < 600px
+  const isMobile = useMediaQuery(theme.breakpoints.down("md")); // < 900px
 
   return (
     <Box
@@ -14,8 +14,9 @@ const InfoPanel = () => {
         backdropFilter: "blur(10px)",
         padding: 2,
         borderRadius: 2,
-        minWidth: 200,
-        maxWidth: isMobile ? "45vw" : "none", // Cap width on mobile
+        fontSize: 12,
+        minWidth: 90,
+        maxWidth: isMobile ? "25vw" : "none", // Cap width on mobile
       }}
     >
       <Typography
@@ -32,35 +33,48 @@ const InfoPanel = () => {
           3D visualisation of air pollution across Delhi
         </Typography>
       )}
-      <Box sx={{ mt: 2 }}>
+      {!isMobile && ( // Hide description on mobile to save space
         <Typography
-          variant="caption"
-          sx={{
-            color: "rgba(255,255,255,0.6)",
-            fontSize: isMobile ? "0.65rem" : "0.75rem",
-          }}
+          variant="body2"
+          sx={{ color: "rgba(255,255,255,0.8)", mb: 1 }}
         >
-          Pollution Range
+          May/June 2026
         </Typography>
-      </Box>
-      <Box sx={{ display: "flex", justifyContent: "space-around" }}>
-        <Typography
-          variant={"body2"}
-          sx={{
-            color: "white",
-          }}
-        >
-          PM2.5: (27 - 91)
-        </Typography>
-        <Typography
-          variant={"body2"}
-          sx={{
-            color: "white",
-          }}
-        >
-          AQI: (83 - 169)
-        </Typography>
-      </Box>
+      )}
+      {!isMobile && (
+        <Box sx={{ mt: 2 }}>
+          <Typography
+            variant="caption"
+            sx={{
+              color: "rgba(255,255,255,0.6)",
+              fontSize: isMobile ? "0.65rem" : "0.75rem",
+            }}
+          >
+            Pollution Range
+          </Typography>
+        </Box>
+      )}
+
+      {!isMobile && (
+        <Box sx={{ display: "flex", justifyContent: "space-around" }}>
+          <Typography
+            variant={"body2"}
+            sx={{
+              color: "white",
+            }}
+          >
+            PM2.5: (27 - 91)
+          </Typography>
+          <Typography
+            variant={"body2"}
+            sx={{
+              color: "white",
+            }}
+          >
+            AQI: (83 - 169)
+          </Typography>
+        </Box>
+      )}
     </Box>
   );
 };

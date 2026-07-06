@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 const Legend = () => {
   const aqi_scale = {
     good: { range: "0-50", color: "#00E400" },
@@ -8,7 +10,20 @@ const Legend = () => {
     hazardous: { range: "301-500", color: "#7E0023" },
   };
   return (
-    <div id="legend" className="panel">
+    <Box
+      sx={{
+        position: "absolute",
+        top: 10,
+        right: 10,
+        background: "rgba(0, 0, 0, 0.65)",
+        backdropFilter: "blur(8px)",
+        padding: 2,
+        borderRadius: 2,
+        color: "#fff",
+        fontSize: 12,
+        fontFamily: "system-ui",
+      }}
+    >
       <div style={{ fontWeight: 600, marginBottom: 8 }}>Air Quality (AQI)</div>
       {Object.entries(aqi_scale).map(([name, info]) => (
         <div
@@ -34,7 +49,7 @@ const Legend = () => {
           </span>
         </div>
       ))}
-    </div>
+    </Box>
   );
 };
 
