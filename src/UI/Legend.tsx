@@ -1,6 +1,9 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 const Legend = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md")); // < 900px
+
   const aqi_scale = {
     good: { range: "0-50", color: "#00E400" },
     moderate: { range: "51-100", color: "#FFFF00" },
@@ -20,7 +23,7 @@ const Legend = () => {
         padding: 2,
         borderRadius: 2,
         color: "#fff",
-        fontSize: 12,
+        fontSize: isMobile ? 12 : 16,
         fontFamily: "system-ui",
       }}
     >

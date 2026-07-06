@@ -14,7 +14,7 @@ const InfoPanel = () => {
         backdropFilter: "blur(10px)",
         padding: 2,
         borderRadius: 2,
-        fontSize: 12,
+        fontSize: isMobile ? 12 : 16,
         minWidth: 90,
         maxWidth: isMobile ? "25vw" : "none", // Cap width on mobile
       }}
