@@ -4,6 +4,7 @@ import Info from "./Info";
 import TimeLine from "./TimeLine";
 import TimeScrubber from "./TimeScrubber";
 import Legend from "./Legend";
+import InfoPanel from "./InfoPanel";
 
 const UI = () => {
   return (
@@ -14,6 +15,7 @@ const UI = () => {
       <Legend />
       {/* <TimeLine /> */}
       <TimeScrubber />
+      <InfoPanel />
     </>
   );
 };

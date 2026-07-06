@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Slider from "@mui/material/Slider";
 import useStore from "../state/store";
 
