@@ -1,10 +1,19 @@
 import { useEffect, useState, useMemo } from "react";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
-import useHeightFogMaterial from "./useHeightfogMaterial";
 import { Color, Shape, ExtrudeGeometry, Float32BufferAttribute } from "three";
 
+type Building = {
+  coords: [number, number][];
+  height: number;
+};
+
 // Project lon/lat to local metres, centred on the bbox centre.
-function project(lon, lat, centerLon, centerLat) {
+function project(
+  lon: number,
+  lat: number,
+  centerLon: number,
+  centerLat: number,
+) {
   const R = 6378137; // earth radius, metres
   const x =
     (lon - centerLon) *
@@ -15,12 +24,11 @@ function project(lon, lat, centerLon, centerLat) {
   return [x, z];
 }
 
-function Buildings({ color, pm25 }) {
-  const [buildings, setBuildings] = useState([]);
-  const fogMaterial = useHeightFogMaterial(color, pm25, { fogTop: 40 });
+function Buildings() {
+  const [buildings, setBuildings] = useState<Building[]>([]);
 
   useEffect(() => {
-    fetch("/data/delhi_buildings.json")
+    fetch("./data/delhi_buildings.json")
       .then((res) => res.json())
       .then(setBuildings)
       .catch((err) => console.error("Failed to load buildings:", err));

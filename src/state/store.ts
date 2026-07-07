@@ -1,12 +1,27 @@
 import { create } from "zustand";
 import { Color } from "three";
 
+export type TimeseriesEntry = {
+  date: string;
+  pm25: number;
+  aqi: number;
+  color: string;
+};
+
+export type Sensor = {
+  timeseries: TimeseriesEntry[];
+};
+
+export type AirData = {
+  sensors: Sensor[];
+};
+
 type AirVizState = {
   currentDay: number;
   setCurrentDay: (day: number) => void;
   timeLength: number;
-  airData: any;
-  setAirData: (data: any) => void;
+  airData: AirData | null;
+  setAirData: (data: AirData) => void;
   numPlanes: number;
   setNumPlanes: (planes: number) => void;
   planeOpacity: number;

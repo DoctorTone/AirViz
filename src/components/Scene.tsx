@@ -10,7 +10,7 @@ const Scene = () => {
   const currentDay = useStore((state) => state.currentDay);
 
   useEffect(() => {
-    fetch("/data/delhi_air_quality.json")
+    fetch("./data/delhi_air_quality.json")
       .then((res) => res.json())
       .then((json) => setAirData(json))
       .catch((err) => console.error("Failed to load data:", err));
@@ -27,8 +27,8 @@ const Scene = () => {
   return (
     <>
       <Terrain />
-      <Buildings color={currentReading.color} pm25={currentReading.pm25} />
-      <SmogLayers color={currentReading.color} pm25={currentReading.pm25} />
+      <Buildings />
+      <SmogLayers pm25={currentReading.pm25} />
     </>
   );
 };
